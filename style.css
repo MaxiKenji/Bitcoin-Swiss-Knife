@@ -704,9 +704,7 @@ select.form-control {
 .block {
   display: block;
 }
-.hidden {
-  display: none;
-}
+
 
 /* Accessibility */
 .sr-only {
@@ -1056,6 +1054,14 @@ margin: 60px;
     }
     
     
+}
+
+@media (max-width: 480px) {
+  body {
+    overflow-y: auto;  /* allow vertical scroll */
+    height: auto;      /* body grows with content */
+    width: auto;       /* natural width */
+  }
 }
 
 /* Animation for loading */

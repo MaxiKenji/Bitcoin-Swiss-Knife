@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function createFallbackIcon(img, index) {
         if (img.style.display === 'none') return; // Already handled
         
-        img.style.display = 'none';
+    
 
         
         const fallbackIcon = document.createElement('div');
@@ -54,6 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
             transition: all 0.3s ease;
             filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
         `;
+        
         
         img.parentNode.appendChild(fallbackIcon);
         
